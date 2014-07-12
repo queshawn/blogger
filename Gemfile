@@ -13,9 +13,13 @@ gem 'spring',        group: :development
 
 group :development, :test do
   gem 'sqlite3'
+  group :development do
+  gem 'quiet_assets'
+end
 end
 
 group :production do
   gem 'pg'
+ 
 end
 
