@@ -6,12 +6,10 @@ class CommentsController < ApplicationController
       format.html { redirect_to @post }
       format.js
     end
-    
+  end
+  
   private
   def comment_params
     params.require(:comment).permit(:body)
-end
-end
-
-
   end
+end
